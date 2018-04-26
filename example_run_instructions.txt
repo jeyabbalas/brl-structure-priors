@@ -1,0 +1,35 @@
+Example run instructions
+========================
+
+
+In this document, we show the reader how to replicate the example real-world data experiment from the paper. We extracted the dataset from Gene Expression Omnibus (Accession ID: GSE19804). The process of extraction and pre-processing is given in the R script at './real_world_data/exp_gen_19804.R'. The dataset is in file './real_world_data/GSE19804_exp.txt'. This file is already formatted in BRL input format (read MANUAL.txt to format your own dataset). The structure priors are specified using the files in the folder './real_world_data/EGFR_priors/'. As an example, we set the lambda to 8.0 using file './real_world_data/EGFR_priors/egfr_lambda_8.txt' and specify the prior structure that EGFR should be a parent of the Class variable.
+
+To run the experiment using BRL, run the following command on the terminal running Java—
+
+
+1. To run BRL Greedy best-first search without structure priors—
+
+$> java -jar BRL.jar -LP -rgm 1 0 -d 4 0.5 -cv 10 -PPP -DP -od ./results/brlp_EGFR_lambda0_GSE19804/ ./real_world_data/GSE19804_exp.txt
+
+The flag '-LP' indicates the subsequent flags are learner parameters. Under this flag, we have '-rgm' that indicates the rule generation method. The rgm value of '1 0' corresponds to BRL greedy best-first search algorithm (see BRL Manual for other options). Flag '-d' discretizes the data, and values '4 0.5' indicates EBD discretization with a user parameter value set to 0.5. Flag '-cv' is used for evaluation using 10-fold cross validation.
+
+The flag '-PPP' are the data pre-processing parameters. For this case study, we do not perform any pre-processing.
+
+The flag '-DP' are the data parameters. The BRL output of this run would be stored in the directory indicated by the output directory flag, '-od'. The results are saved in the directory './results/brlp_EGFR_lambda0_GSE19804/'. Finally, './real_world_data/GSE19804_exp.txt' is the input data file formatted for BRL.
+
+To look at the resulting rule model, see file './results/brlp_EGFR_lambda0_GSE19804/GSE19804_exp.perf'. To see the 10-fold cross-validation performance metrics, see file './results/brlp_EGFR_lambda0_GSE19804/ GSE19804_exp.cv.perf'.
+
+
+
+2. To run BRLp with structure priors—
+
+$> java -jar BRL.jar -LP -rgm 1 0 -d 4 0.5 -cv 10 -PPP -DP -od ./results/brlp_EGFR_lambda8_GSE19804/ -structprior ./real_world_data/EGFR_priors/egfr_lambda_8.txt ./real_world_data/GSE19804_exp.txt
+
+All the BRL options are same as before, except one additional data parameter flag. We use the flag '-structprior' to indicate the structure parameter file that is stored in './real_world_data/EGFR_priors/egfr_lambda_8.txt'. To learn how to format this file for your own experiment, consult the MANUAL.txt file under STRUCTURE PRIOR FORMAT.
+
+The BRL output of this run will be stored in './results/brlp_EGFR_lambda8_GSE19804/'.
+
+Alternatively, we can run BRLp without structure priors by simply using a structure prior file with lambda value of 0, as follows—
+
+$> java -jar BRL.jar -LP -rgm 1 0 -d 4 0.5 -cv 10 -PPP -DP -od ./results/brlp_EGFR_lambda0_GSE19804/ -structprior ./real_world_data/EGFR_priors/egfr_lambda_0.txt ./real_world_data/GSE19804_exp.txt
+

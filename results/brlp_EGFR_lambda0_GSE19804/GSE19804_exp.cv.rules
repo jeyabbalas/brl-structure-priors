@@ -1,0 +1,402 @@
+Rules from cross-validation: 
+=== Generating bayesian model ===
+(None)->AGER, (None)->RFC4, (None)->MYOZ2, (None)->SAMD13, (AGER,RFC4,MYOZ2,SAMD13)->@Class, 
+
+=== Rules from fold 1 ===
+0. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (MYOZ2 = -inf..4.175) (SAMD13 = -inf..7.358)) ==> (@Class = Control)
+	Posterior Odds=1025.0, Posterior Probability=0.999, P=0.0, TP=32, FP=0, Pos=54, Neg=54
+
+1. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (MYOZ2 = 4.175..inf) (SAMD13 = -inf..7.358)) ==> (@Class = Control)
+	Posterior Odds=641.0, Posterior Probability=0.9984, P=0.0, TP=20, FP=0, Pos=54, Neg=54
+
+2. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (MYOZ2 = 4.175..inf) (SAMD13 = -inf..7.358)) ==> (@Class = Control)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+3. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (MYOZ2 = 4.175..inf) (SAMD13 = 7.358..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+4. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (MYOZ2 = -inf..4.175) (SAMD13 = 7.358..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+5. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (MYOZ2 = -inf..4.175) (SAMD13 = 7.358..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+6. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (MYOZ2 = 4.175..inf) (SAMD13 = -inf..7.358)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (MYOZ2 = 4.175..inf) (SAMD13 = 7.358..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (MYOZ2 = -inf..4.175) (SAMD13 = 7.358..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (MYOZ2 = 4.175..inf) (SAMD13 = 7.358..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+10. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (MYOZ2 = -inf..4.175) (SAMD13 = -inf..7.358)) ==> (@Class = Case)
+	Posterior Odds=833.0, Posterior Probability=0.9988, P=0.0, TP=26, FP=0, Pos=54, Neg=54
+
+11. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (MYOZ2 = -inf..4.175) (SAMD13 = -inf..7.358)) ==> (@Class = Case)
+	Posterior Odds=481.0, Posterior Probability=0.9979, P=0.0, TP=15, FP=0, Pos=54, Neg=54
+
+12. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (MYOZ2 = -inf..4.175) (SAMD13 = 7.358..inf)) ==> (@Class = Case)
+	Posterior Odds=257.0, Posterior Probability=0.9961, P=0.003, TP=8, FP=0, Pos=54, Neg=54
+
+13. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (MYOZ2 = -inf..4.175) (SAMD13 = -inf..7.358)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+14. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (MYOZ2 = 4.175..inf) (SAMD13 = -inf..7.358)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+15. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (MYOZ2 = 4.175..inf) (SAMD13 = 7.358..inf)) ==> (@Class = Case)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (4):
+SAMD13, MYOZ2, AGER, RFC4
+
+=== Generating bayesian model ===
+(None)->GOLM1, (None)->SLC50A1, (None)->FOSL2, (GOLM1,SLC50A1,FOSL2)->@Class, 
+
+=== Rules from fold 2 ===
+0. ((GOLM1 = -inf..8.589) (SLC50A1 = -inf..8.688) (FOSL2 = 8.198..inf)) ==> (@Class = Control)
+	Posterior Odds=1153.0, Posterior Probability=0.9991, P=0.0, TP=48, FP=0, Pos=54, Neg=54
+
+1. ((GOLM1 = 8.589..8.854) (SLC50A1 = -inf..8.688) (FOSL2 = 8.198..inf)) ==> (@Class = Control)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+2. ((GOLM1 = -inf..8.589) (SLC50A1 = 8.688..inf) (FOSL2 = 8.198..inf)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+3. ((GOLM1 = 8.589..8.854) (SLC50A1 = -inf..8.688) (FOSL2 = -inf..8.198)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+4. ((GOLM1 = -inf..8.589) (SLC50A1 = -inf..8.688) (FOSL2 = -inf..8.198)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+5. ((GOLM1 = 8.854..inf) (SLC50A1 = -inf..8.688) (FOSL2 = -inf..8.198)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+6. ((GOLM1 = 8.854..inf) (SLC50A1 = 8.688..inf) (FOSL2 = 8.198..inf)) ==> (@Class = Case)
+	Posterior Odds=817.0, Posterior Probability=0.9988, P=0.0, TP=34, FP=0, Pos=54, Neg=54
+
+7. ((GOLM1 = 8.854..inf) (SLC50A1 = 8.688..inf) (FOSL2 = -inf..8.198)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.003, TP=8, FP=0, Pos=54, Neg=54
+
+8. ((GOLM1 = 8.854..inf) (SLC50A1 = -inf..8.688) (FOSL2 = 8.198..inf)) ==> (@Class = Case)
+	Posterior Odds=145.0, Posterior Probability=0.9932, P=0.0135, TP=6, FP=0, Pos=54, Neg=54
+
+9. ((GOLM1 = 8.589..8.854) (SLC50A1 = 8.688..inf) (FOSL2 = 8.198..inf)) ==> (@Class = Case)
+	Posterior Odds=73.0, Posterior Probability=0.9865, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+10. ((GOLM1 = -inf..8.589) (SLC50A1 = 8.688..inf) (FOSL2 = -inf..8.198)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+11. ((GOLM1 = 8.589..8.854) (SLC50A1 = 8.688..inf) (FOSL2 = -inf..8.198)) ==> (@Class = Case)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (3):
+FOSL2, GOLM1, SLC50A1
+
+=== Generating bayesian model ===
+(None)->COL10A1, (None)->LOC100132057, (None)->LOC100996404, (COL10A1,LOC100132057,LOC100996404)->@Class, 
+
+=== Rules from fold 3 ===
+0. ((COL10A1 = -inf..7.690) (LOC100132057 = -inf..5.443) (LOC100996404 = 3.424..inf)) ==> (@Class = Control)
+	Posterior Odds=705.0, Posterior Probability=0.9986, P=0.0, TP=44, FP=0, Pos=54, Neg=54
+
+1. ((COL10A1 = -inf..7.690) (LOC100132057 = -inf..5.443) (LOC100996404 = -inf..3.424)) ==> (@Class = Control)
+	Posterior Odds=145.0, Posterior Probability=0.9932, P=0.0014, TP=9, FP=0, Pos=54, Neg=54
+
+2. ((COL10A1 = -inf..7.690) (LOC100132057 = 5.443..inf) (LOC100996404 = -inf..3.424)) ==> (@Class = Control)
+	Posterior Odds=17.0, Posterior Probability=0.9444, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+3. ((COL10A1 = 7.690..inf) (LOC100132057 = -inf..5.443) (LOC100996404 = -inf..3.424)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+4. ((COL10A1 = 7.690..inf) (LOC100132057 = 5.443..inf) (LOC100996404 = -inf..3.424)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+5. ((COL10A1 = 7.690..inf) (LOC100132057 = -inf..5.443) (LOC100996404 = 3.424..inf)) ==> (@Class = Case)
+	Posterior Odds=625.0, Posterior Probability=0.9984, P=0.0, TP=39, FP=0, Pos=54, Neg=54
+
+6. ((COL10A1 = 7.690..inf) (LOC100132057 = 5.443..inf) (LOC100996404 = 3.424..inf)) ==> (@Class = Case)
+	Posterior Odds=177.0, Posterior Probability=0.9944, P=0.0003, TP=11, FP=0, Pos=54, Neg=54
+
+7. ((COL10A1 = -inf..7.690) (LOC100132057 = 5.443..inf) (LOC100996404 = 3.424..inf)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+Attributes used (3):
+LOC100996404, LOC100132057, COL10A1
+
+=== Generating bayesian model ===
+(None)->COL10A1, (None)->NUDT1, (None)->LOC646736, (COL10A1,NUDT1,LOC646736)->@Class, 
+
+=== Rules from fold 4 ===
+0. ((COL10A1 = -inf..7.690) (NUDT1 = -inf..7.742) (LOC646736 = -inf..4.186)) ==> (@Class = Control)
+	Posterior Odds=737.0, Posterior Probability=0.9986, P=0.0, TP=46, FP=0, Pos=54, Neg=54
+
+1. ((COL10A1 = -inf..7.690) (NUDT1 = -inf..7.742) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=113.0, Posterior Probability=0.9912, P=0.0064, TP=7, FP=0, Pos=54, Neg=54
+
+2. ((COL10A1 = 7.690..inf) (NUDT1 = -inf..7.742) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=17.0, Posterior Probability=0.9444, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+3. ((COL10A1 = -inf..7.690) (NUDT1 = 7.742..inf) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+4. ((COL10A1 = 7.690..inf) (NUDT1 = 7.742..inf) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+5. ((COL10A1 = 7.690..inf) (NUDT1 = 7.742..inf) (LOC646736 = -inf..4.186)) ==> (@Class = Case)
+	Posterior Odds=417.0, Posterior Probability=0.9976, P=0.0, TP=26, FP=0, Pos=54, Neg=54
+
+6. ((COL10A1 = 7.690..inf) (NUDT1 = -inf..7.742) (LOC646736 = -inf..4.186)) ==> (@Class = Case)
+	Posterior Odds=401.0, Posterior Probability=0.9975, P=0.0, TP=25, FP=0, Pos=54, Neg=54
+
+7. ((COL10A1 = -inf..7.690) (NUDT1 = 7.742..inf) (LOC646736 = -inf..4.186)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+Attributes used (3):
+NUDT1, LOC646736, COL10A1
+
+=== Generating bayesian model ===
+(None)->SGCG, (None)->COL10A1, (None)->POLD4, (None)->MASP1, (SGCG,COL10A1,POLD4,MASP1)->@Class, 
+
+=== Rules from fold 5 ===
+0. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1537.0, Posterior Probability=0.9993, P=0.0, TP=48, FP=0, Pos=54, Neg=54
+
+1. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=129.0, Posterior Probability=0.9923, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+2. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+3. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+4. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+5. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+6. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+10. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+11. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (MASP1 = -inf..6.839)) ==> (@Class = Case)
+	Posterior Odds=1409.0, Posterior Probability=0.9993, P=0.0, TP=44, FP=0, Pos=54, Neg=54
+
+12. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (MASP1 = -inf..6.839)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.0135, TP=6, FP=0, Pos=54, Neg=54
+
+13. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (MASP1 = -inf..6.839)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+14. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (MASP1 = 6.839..inf)) ==> (@Class = Case)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+15. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (MASP1 = 6.839..inf)) ==> (@Class = Case)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (4):
+MASP1, COL10A1, POLD4, SGCG
+
+=== Generating bayesian model ===
+(None)->COL10A1, (None)->CASKIN2, (None)->AKR1C3, (COL10A1,CASKIN2,AKR1C3)->@Class, 
+
+=== Rules from fold 6 ===
+0. ((COL10A1 = -inf..7.690) (CASKIN2 = 9.090..inf) (AKR1C3 = 8.953..10.839)) ==> (@Class = Control)
+	Posterior Odds=865.0, Posterior Probability=0.9988, P=0.0, TP=36, FP=0, Pos=54, Neg=54
+
+1. ((COL10A1 = -inf..7.690) (CASKIN2 = -inf..9.090) (AKR1C3 = 8.953..10.839)) ==> (@Class = Control)
+	Posterior Odds=217.0, Posterior Probability=0.9954, P=0.0014, TP=9, FP=0, Pos=54, Neg=54
+
+2. ((COL10A1 = -inf..7.690) (CASKIN2 = 9.090..inf) (AKR1C3 = 10.839..inf)) ==> (@Class = Control)
+	Posterior Odds=121.0, Posterior Probability=0.9918, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+3. ((COL10A1 = -inf..7.690) (CASKIN2 = -inf..9.090) (AKR1C3 = -inf..8.953)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+4. ((COL10A1 = 7.690..inf) (CASKIN2 = 9.090..inf) (AKR1C3 = 8.953..10.839)) ==> (@Class = Control)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+5. ((COL10A1 = -inf..7.690) (CASKIN2 = 9.090..inf) (AKR1C3 = -inf..8.953)) ==> (@Class = Control)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+6. ((COL10A1 = 7.690..inf) (CASKIN2 = 9.090..inf) (AKR1C3 = -inf..8.953)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((COL10A1 = 7.690..inf) (CASKIN2 = 9.090..inf) (AKR1C3 = 10.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((COL10A1 = 7.690..inf) (CASKIN2 = -inf..9.090) (AKR1C3 = 8.953..10.839)) ==> (@Class = Case)
+	Posterior Odds=505.0, Posterior Probability=0.998, P=0.0, TP=21, FP=0, Pos=54, Neg=54
+
+9. ((COL10A1 = 7.690..inf) (CASKIN2 = -inf..9.090) (AKR1C3 = 10.839..inf)) ==> (@Class = Case)
+	Posterior Odds=385.0, Posterior Probability=0.9974, P=0.0, TP=16, FP=0, Pos=54, Neg=54
+
+10. ((COL10A1 = 7.690..inf) (CASKIN2 = -inf..9.090) (AKR1C3 = -inf..8.953)) ==> (@Class = Case)
+	Posterior Odds=337.0, Posterior Probability=0.997, P=0.0, TP=14, FP=0, Pos=54, Neg=54
+
+11. ((COL10A1 = -inf..7.690) (CASKIN2 = -inf..9.090) (AKR1C3 = 10.839..inf)) ==> (@Class = Case)
+	Posterior Odds=73.0, Posterior Probability=0.9865, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+Attributes used (3):
+AKR1C3, COL10A1, CASKIN2
+
+=== Generating bayesian model ===
+(None)->AGER, (None)->SLC50A1, (None)->JPT2, (AGER,SLC50A1,JPT2)->@Class, 
+
+=== Rules from fold 7 ===
+0. ((AGER = 11.057..inf) (SLC50A1 = -inf..8.688) (JPT2 = -inf..9.873)) ==> (@Class = Control)
+	Posterior Odds=801.0, Posterior Probability=0.9988, P=0.0, TP=50, FP=0, Pos=54, Neg=54
+
+1. ((AGER = -inf..11.057) (SLC50A1 = -inf..8.688) (JPT2 = -inf..9.873)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+2. ((AGER = 11.057..inf) (SLC50A1 = 8.688..inf) (JPT2 = 9.873..inf)) ==> (@Class = Control)
+	Posterior Odds=17.0, Posterior Probability=0.9444, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+3. ((AGER = 11.057..inf) (SLC50A1 = -inf..8.688) (JPT2 = 9.873..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+4. ((AGER = -inf..11.057) (SLC50A1 = 8.688..inf) (JPT2 = 9.873..inf)) ==> (@Class = Case)
+	Posterior Odds=641.0, Posterior Probability=0.9984, P=0.0, TP=40, FP=0, Pos=54, Neg=54
+
+5. ((AGER = -inf..11.057) (SLC50A1 = -inf..8.688) (JPT2 = 9.873..inf)) ==> (@Class = Case)
+	Posterior Odds=129.0, Posterior Probability=0.9923, P=0.003, TP=8, FP=0, Pos=54, Neg=54
+
+6. ((AGER = -inf..11.057) (SLC50A1 = 8.688..inf) (JPT2 = -inf..9.873)) ==> (@Class = Case)
+	Posterior Odds=81.0, Posterior Probability=0.9878, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+7. ((AGER = 11.057..inf) (SLC50A1 = 8.688..inf) (JPT2 = -inf..9.873)) ==> (@Class = Case)
+	Posterior Odds=17.0, Posterior Probability=0.9444, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (3):
+AGER, SLC50A1, JPT2
+
+=== Generating bayesian model ===
+(None)->COL10A1, (None)->RTKN2, (COL10A1,RTKN2)->@Class, 
+
+=== Rules from fold 8 ===
+0. ((COL10A1 = -inf..7.128) (RTKN2 = 5.646..inf)) ==> (@Class = Control)
+	Posterior Odds=553.0, Posterior Probability=0.9982, P=0.0, TP=46, FP=0, Pos=54, Neg=54
+
+1. ((COL10A1 = -inf..7.128) (RTKN2 = -inf..5.646)) ==> (@Class = Control)
+	Posterior Odds=61.0, Posterior Probability=0.9839, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+2. ((COL10A1 = 7.128..7.690) (RTKN2 = 5.646..inf)) ==> (@Class = Control)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+3. ((COL10A1 = 7.690..inf) (RTKN2 = 5.646..inf)) ==> (@Class = Control)
+	Posterior Odds=13.0, Posterior Probability=0.9286, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+4. ((COL10A1 = 7.690..inf) (RTKN2 = -inf..5.646)) ==> (@Class = Case)
+	Posterior Odds=625.0, Posterior Probability=0.9984, P=0.0, TP=52, FP=0, Pos=54, Neg=54
+
+5. ((COL10A1 = 7.128..7.690) (RTKN2 = -inf..5.646)) ==> (@Class = Case)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+Attributes used (2):
+RTKN2, COL10A1
+
+=== Generating bayesian model ===
+(None)->COL10A1, (None)->PKNOX2, (None)->FBN1, (COL10A1,PKNOX2,FBN1)->@Class, 
+
+=== Rules from fold 9 ===
+0. ((COL10A1 = -inf..7.690) (PKNOX2 = 7.991..inf) (FBN1 = -inf..10.764)) ==> (@Class = Control)
+	Posterior Odds=889.0, Posterior Probability=0.9989, P=0.0, TP=37, FP=0, Pos=54, Neg=54
+
+1. ((COL10A1 = -inf..7.690) (PKNOX2 = 6.862..7.991) (FBN1 = -inf..10.764)) ==> (@Class = Control)
+	Posterior Odds=361.0, Posterior Probability=0.9972, P=0.0, TP=15, FP=0, Pos=54, Neg=54
+
+2. ((COL10A1 = 7.690..inf) (PKNOX2 = 7.991..inf) (FBN1 = -inf..10.764)) ==> (@Class = Control)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+3. ((COL10A1 = -inf..7.690) (PKNOX2 = 7.991..inf) (FBN1 = 10.764..inf)) ==> (@Class = Control)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+4. ((COL10A1 = 7.690..inf) (PKNOX2 = 7.991..inf) (FBN1 = 10.764..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+5. ((COL10A1 = -inf..7.690) (PKNOX2 = -inf..6.862) (FBN1 = 10.764..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+6. ((COL10A1 = 7.690..inf) (PKNOX2 = 6.862..7.991) (FBN1 = -inf..10.764)) ==> (@Class = Case)
+	Posterior Odds=433.0, Posterior Probability=0.9977, P=0.0, TP=18, FP=0, Pos=54, Neg=54
+
+7. ((COL10A1 = 7.690..inf) (PKNOX2 = -inf..6.862) (FBN1 = -inf..10.764)) ==> (@Class = Case)
+	Posterior Odds=409.0, Posterior Probability=0.9976, P=0.0, TP=17, FP=0, Pos=54, Neg=54
+
+8. ((COL10A1 = 7.690..inf) (PKNOX2 = 6.862..7.991) (FBN1 = 10.764..inf)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.003, TP=8, FP=0, Pos=54, Neg=54
+
+9. ((COL10A1 = 7.690..inf) (PKNOX2 = -inf..6.862) (FBN1 = 10.764..inf)) ==> (@Class = Case)
+	Posterior Odds=169.0, Posterior Probability=0.9941, P=0.0064, TP=7, FP=0, Pos=54, Neg=54
+
+10. ((COL10A1 = -inf..7.690) (PKNOX2 = 6.862..7.991) (FBN1 = 10.764..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+11. ((COL10A1 = -inf..7.690) (PKNOX2 = -inf..6.862) (FBN1 = -inf..10.764)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+Attributes used (3):
+COL10A1, FBN1, PKNOX2
+
+=== Generating bayesian model ===
+(None)->EFNA4, (None)->KLRG2, (None)->LYRM9, (EFNA4,KLRG2,LYRM9)->@Class, 
+
+=== Rules from fold 10 ===
+0. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (LYRM9 = -inf..7.746)) ==> (@Class = Control)
+	Posterior Odds=745.0, Posterior Probability=0.9987, P=0.0, TP=31, FP=0, Pos=54, Neg=54
+
+1. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (LYRM9 = 7.746..inf)) ==> (@Class = Control)
+	Posterior Odds=241.0, Posterior Probability=0.9959, P=0.0006, TP=10, FP=0, Pos=54, Neg=54
+
+2. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (LYRM9 = -inf..7.746)) ==> (@Class = Control)
+	Posterior Odds=121.0, Posterior Probability=0.9918, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+3. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (LYRM9 = -inf..7.746)) ==> (@Class = Control)
+	Posterior Odds=121.0, Posterior Probability=0.9918, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+4. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (LYRM9 = 7.746..inf)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+5. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (LYRM9 = 7.746..inf)) ==> (@Class = Control)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+6. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (LYRM9 = 7.746..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (LYRM9 = 7.746..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (LYRM9 = 7.746..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (LYRM9 = -inf..7.746)) ==> (@Class = Case)
+	Posterior Odds=889.0, Posterior Probability=0.9989, P=0.0, TP=37, FP=0, Pos=54, Neg=54
+
+10. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (LYRM9 = -inf..7.746)) ==> (@Class = Case)
+	Posterior Odds=289.0, Posterior Probability=0.9966, P=0.0001, TP=12, FP=0, Pos=54, Neg=54
+
+11. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (LYRM9 = -inf..7.746)) ==> (@Class = Case)
+	Posterior Odds=121.0, Posterior Probability=0.9918, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+Attributes used (3):
+KLRG2, LYRM9, EFNA4
+
+

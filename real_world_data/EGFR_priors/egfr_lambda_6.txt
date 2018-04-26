@@ -1,0 +1,6 @@
+lambda = 6.0
+E_plus
+EGFR	1.0
+END
+E_minus
+END

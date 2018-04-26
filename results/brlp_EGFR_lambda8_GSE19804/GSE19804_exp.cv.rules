@@ -1,0 +1,732 @@
+Rules from cross-validation: 
+=== Generating bayesian model ===
+(None)->AGER, (None)->RFC4, (None)->EGFR, (None)->COL10A1, (None)->GKN2, (AGER,RFC4,EGFR,COL10A1,GKN2)->@Class, 
+
+=== Rules from fold 1 ===
+0. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (EGFR = -inf..10.809) (COL10A1 = -inf..7.690) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=2817.0, Posterior Probability=0.9996, P=0.0, TP=44, FP=0, Pos=54, Neg=54
+
+1. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (EGFR = 10.809..inf) (COL10A1 = -inf..7.690) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=449.0, Posterior Probability=0.9978, P=0.0064, TP=7, FP=0, Pos=54, Neg=54
+
+2. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (EGFR = -inf..10.809) (COL10A1 = -inf..7.690) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+3. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (EGFR = 10.809..inf) (COL10A1 = -inf..7.690) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+4. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (EGFR = -inf..10.809) (COL10A1 = 7.690..inf) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+5. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (EGFR = 10.809..inf) (COL10A1 = -inf..7.690) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+6. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (EGFR = 10.809..inf) (COL10A1 = -inf..7.690) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (EGFR = 10.809..inf) (COL10A1 = 7.690..inf) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (EGFR = -inf..10.809) (COL10A1 = -inf..7.690) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (EGFR = -inf..10.809) (COL10A1 = -inf..7.690) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+10. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (EGFR = -inf..10.809) (COL10A1 = 7.690..inf) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+11. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (EGFR = -inf..10.809) (COL10A1 = 7.690..inf) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+12. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (EGFR = 10.809..inf) (COL10A1 = -inf..7.690) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+13. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (EGFR = 10.809..inf) (COL10A1 = 7.690..inf) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+14. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (EGFR = 10.809..inf) (COL10A1 = 7.690..inf) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+15. ((AGER = 11.057..inf) (RFC4 = -inf..8.106) (EGFR = 10.809..inf) (COL10A1 = 7.690..inf) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+16. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (EGFR = -inf..10.809) (COL10A1 = -inf..7.690) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+17. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (EGFR = 10.809..inf) (COL10A1 = 7.690..inf) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+18. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (EGFR = 10.809..inf) (COL10A1 = -inf..7.690) (GKN2 = -inf..8.844)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+19. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (EGFR = 10.809..inf) (COL10A1 = -inf..7.690) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+20. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (EGFR = -inf..10.809) (COL10A1 = 7.690..inf) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+21. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (EGFR = -inf..10.809) (COL10A1 = -inf..7.690) (GKN2 = 8.844..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+22. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (EGFR = 10.809..inf) (COL10A1 = 7.690..inf) (GKN2 = -inf..8.844)) ==> (@Class = Case)
+	Posterior Odds=897.0, Posterior Probability=0.9989, P=0.0, TP=14, FP=0, Pos=54, Neg=54
+
+23. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (EGFR = -inf..10.809) (COL10A1 = 7.690..inf) (GKN2 = -inf..8.844)) ==> (@Class = Case)
+	Posterior Odds=769.0, Posterior Probability=0.9987, P=0.0001, TP=12, FP=0, Pos=54, Neg=54
+
+24. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (EGFR = 10.809..inf) (COL10A1 = 7.690..inf) (GKN2 = -inf..8.844)) ==> (@Class = Case)
+	Posterior Odds=769.0, Posterior Probability=0.9987, P=0.0001, TP=12, FP=0, Pos=54, Neg=54
+
+25. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (EGFR = -inf..10.809) (COL10A1 = 7.690..inf) (GKN2 = -inf..8.844)) ==> (@Class = Case)
+	Posterior Odds=321.0, Posterior Probability=0.9969, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+26. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (EGFR = -inf..10.809) (COL10A1 = 7.690..inf) (GKN2 = 8.844..inf)) ==> (@Class = Case)
+	Posterior Odds=257.0, Posterior Probability=0.9961, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+27. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (EGFR = 10.809..inf) (COL10A1 = 7.690..inf) (GKN2 = 8.844..inf)) ==> (@Class = Case)
+	Posterior Odds=129.0, Posterior Probability=0.9923, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+28. ((AGER = -inf..11.057) (RFC4 = -inf..8.106) (EGFR = 10.809..inf) (COL10A1 = -inf..7.690) (GKN2 = 8.844..inf)) ==> (@Class = Case)
+	Posterior Odds=129.0, Posterior Probability=0.9923, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+29. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (EGFR = -inf..10.809) (COL10A1 = -inf..7.690) (GKN2 = 8.844..inf)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+30. ((AGER = -inf..11.057) (RFC4 = 8.106..inf) (EGFR = -inf..10.809) (COL10A1 = -inf..7.690) (GKN2 = -inf..8.844)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+31. ((AGER = 11.057..inf) (RFC4 = 8.106..inf) (EGFR = -inf..10.809) (COL10A1 = 7.690..inf) (GKN2 = 8.844..inf)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (5):
+COL10A1, EGFR, RFC4, AGER, GKN2
+
+=== Generating bayesian model ===
+(None)->GOLM1, (None)->SLC50A1, (None)->EGFR, (None)->H2AFV, (GOLM1,SLC50A1,EGFR,H2AFV)->@Class, 
+
+=== Rules from fold 2 ===
+0. ((GOLM1 = -inf..8.589) (SLC50A1 = -inf..8.688) (EGFR = -inf..10.810) (H2AFV = -inf..10.522)) ==> (@Class = Control)
+	Posterior Odds=2065.0, Posterior Probability=0.9995, P=0.0, TP=43, FP=0, Pos=54, Neg=54
+
+1. ((GOLM1 = -inf..8.589) (SLC50A1 = -inf..8.688) (EGFR = 10.810..inf) (H2AFV = -inf..10.522)) ==> (@Class = Control)
+	Posterior Odds=241.0, Posterior Probability=0.9959, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+2. ((GOLM1 = 8.589..8.854) (SLC50A1 = -inf..8.688) (EGFR = -inf..10.810) (H2AFV = -inf..10.522)) ==> (@Class = Control)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+3. ((GOLM1 = -inf..8.589) (SLC50A1 = 8.688..inf) (EGFR = 10.810..inf) (H2AFV = 10.522..inf)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+4. ((GOLM1 = -inf..8.589) (SLC50A1 = 8.688..inf) (EGFR = -inf..10.810) (H2AFV = -inf..10.522)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+5. ((GOLM1 = 8.589..8.854) (SLC50A1 = 8.688..inf) (EGFR = -inf..10.810) (H2AFV = -inf..10.522)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+6. ((GOLM1 = 8.589..8.854) (SLC50A1 = 8.688..inf) (EGFR = 10.810..inf) (H2AFV = -inf..10.522)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((GOLM1 = 8.589..8.854) (SLC50A1 = -inf..8.688) (EGFR = -inf..10.810) (H2AFV = 10.522..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((GOLM1 = 8.589..8.854) (SLC50A1 = -inf..8.688) (EGFR = 10.810..inf) (H2AFV = -inf..10.522)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((GOLM1 = 8.854..inf) (SLC50A1 = -inf..8.688) (EGFR = -inf..10.810) (H2AFV = -inf..10.522)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+10. ((GOLM1 = -inf..8.589) (SLC50A1 = -inf..8.688) (EGFR = 10.810..inf) (H2AFV = 10.522..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+11. ((GOLM1 = 8.854..inf) (SLC50A1 = -inf..8.688) (EGFR = 10.810..inf) (H2AFV = 10.522..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+12. ((GOLM1 = -inf..8.589) (SLC50A1 = -inf..8.688) (EGFR = -inf..10.810) (H2AFV = 10.522..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+13. ((GOLM1 = 8.589..8.854) (SLC50A1 = -inf..8.688) (EGFR = 10.810..inf) (H2AFV = 10.522..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+14. ((GOLM1 = 8.854..inf) (SLC50A1 = 8.688..inf) (EGFR = 10.810..inf) (H2AFV = 10.522..inf)) ==> (@Class = Case)
+	Posterior Odds=1057.0, Posterior Probability=0.9991, P=0.0, TP=22, FP=0, Pos=54, Neg=54
+
+15. ((GOLM1 = 8.854..inf) (SLC50A1 = 8.688..inf) (EGFR = -inf..10.810) (H2AFV = 10.522..inf)) ==> (@Class = Case)
+	Posterior Odds=673.0, Posterior Probability=0.9985, P=0.0, TP=14, FP=0, Pos=54, Neg=54
+
+16. ((GOLM1 = 8.854..inf) (SLC50A1 = 8.688..inf) (EGFR = -inf..10.810) (H2AFV = -inf..10.522)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+17. ((GOLM1 = 8.854..inf) (SLC50A1 = -inf..8.688) (EGFR = 10.810..inf) (H2AFV = -inf..10.522)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+18. ((GOLM1 = 8.589..8.854) (SLC50A1 = 8.688..inf) (EGFR = 10.810..inf) (H2AFV = 10.522..inf)) ==> (@Class = Case)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+19. ((GOLM1 = 8.589..8.854) (SLC50A1 = 8.688..inf) (EGFR = -inf..10.810) (H2AFV = 10.522..inf)) ==> (@Class = Case)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+20. ((GOLM1 = 8.854..inf) (SLC50A1 = 8.688..inf) (EGFR = 10.810..inf) (H2AFV = -inf..10.522)) ==> (@Class = Case)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+21. ((GOLM1 = 8.854..inf) (SLC50A1 = -inf..8.688) (EGFR = -inf..10.810) (H2AFV = 10.522..inf)) ==> (@Class = Case)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+22. ((GOLM1 = -inf..8.589) (SLC50A1 = 8.688..inf) (EGFR = -inf..10.810) (H2AFV = 10.522..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+23. ((GOLM1 = -inf..8.589) (SLC50A1 = 8.688..inf) (EGFR = 10.810..inf) (H2AFV = -inf..10.522)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (4):
+H2AFV, GOLM1, EGFR, SLC50A1
+
+=== Generating bayesian model ===
+(None)->COL10A1, (None)->LOC100132057, (None)->EGFR, (None)->FAM9B, (COL10A1,LOC100132057,EGFR,FAM9B)->@Class, 
+
+=== Rules from fold 3 ===
+0. ((COL10A1 = -inf..7.690) (LOC100132057 = -inf..5.443) (EGFR = -inf..10.809) (FAM9B = 3.674..inf)) ==> (@Class = Control)
+	Posterior Odds=1185.0, Posterior Probability=0.9992, P=0.0, TP=37, FP=0, Pos=54, Neg=54
+
+1. ((COL10A1 = -inf..7.690) (LOC100132057 = -inf..5.443) (EGFR = -inf..10.809) (FAM9B = -inf..3.674)) ==> (@Class = Control)
+	Posterior Odds=257.0, Posterior Probability=0.9961, P=0.003, TP=8, FP=0, Pos=54, Neg=54
+
+2. ((COL10A1 = -inf..7.690) (LOC100132057 = -inf..5.443) (EGFR = 10.809..inf) (FAM9B = 3.674..inf)) ==> (@Class = Control)
+	Posterior Odds=225.0, Posterior Probability=0.9956, P=0.0064, TP=7, FP=0, Pos=54, Neg=54
+
+3. ((COL10A1 = -inf..7.690) (LOC100132057 = -inf..5.443) (EGFR = 10.809..inf) (FAM9B = -inf..3.674)) ==> (@Class = Control)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+4. ((COL10A1 = -inf..7.690) (LOC100132057 = 5.443..inf) (EGFR = -inf..10.809) (FAM9B = -inf..3.674)) ==> (@Class = Control)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+5. ((COL10A1 = -inf..7.690) (LOC100132057 = 5.443..inf) (EGFR = 10.809..inf) (FAM9B = -inf..3.674)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+6. ((COL10A1 = 7.690..inf) (LOC100132057 = -inf..5.443) (EGFR = -inf..10.809) (FAM9B = -inf..3.674)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((COL10A1 = 7.690..inf) (LOC100132057 = 5.443..inf) (EGFR = 10.809..inf) (FAM9B = -inf..3.674)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((COL10A1 = 7.690..inf) (LOC100132057 = 5.443..inf) (EGFR = -inf..10.809) (FAM9B = -inf..3.674)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((COL10A1 = 7.690..inf) (LOC100132057 = -inf..5.443) (EGFR = 10.809..inf) (FAM9B = -inf..3.674)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+10. ((COL10A1 = 7.690..inf) (LOC100132057 = -inf..5.443) (EGFR = 10.809..inf) (FAM9B = 3.674..inf)) ==> (@Class = Case)
+	Posterior Odds=737.0, Posterior Probability=0.9986, P=0.0, TP=23, FP=0, Pos=54, Neg=54
+
+11. ((COL10A1 = 7.690..inf) (LOC100132057 = -inf..5.443) (EGFR = -inf..10.809) (FAM9B = 3.674..inf)) ==> (@Class = Case)
+	Posterior Odds=513.0, Posterior Probability=0.9981, P=0.0, TP=16, FP=0, Pos=54, Neg=54
+
+12. ((COL10A1 = 7.690..inf) (LOC100132057 = 5.443..inf) (EGFR = -inf..10.809) (FAM9B = 3.674..inf)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.0135, TP=6, FP=0, Pos=54, Neg=54
+
+13. ((COL10A1 = 7.690..inf) (LOC100132057 = 5.443..inf) (EGFR = 10.809..inf) (FAM9B = 3.674..inf)) ==> (@Class = Case)
+	Posterior Odds=161.0, Posterior Probability=0.9938, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+14. ((COL10A1 = -inf..7.690) (LOC100132057 = 5.443..inf) (EGFR = 10.809..inf) (FAM9B = 3.674..inf)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+15. ((COL10A1 = -inf..7.690) (LOC100132057 = 5.443..inf) (EGFR = -inf..10.809) (FAM9B = 3.674..inf)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+Attributes used (4):
+COL10A1, EGFR, FAM9B, LOC100132057
+
+=== Generating bayesian model ===
+(None)->COL10A1, (None)->NUDT1, (None)->EGFR, (None)->LOC646736, (COL10A1,NUDT1,EGFR,LOC646736)->@Class, 
+
+=== Rules from fold 4 ===
+0. ((COL10A1 = -inf..7.690) (NUDT1 = -inf..7.742) (EGFR = -inf..10.809) (LOC646736 = -inf..4.186)) ==> (@Class = Control)
+	Posterior Odds=1313.0, Posterior Probability=0.9992, P=0.0, TP=41, FP=0, Pos=54, Neg=54
+
+1. ((COL10A1 = -inf..7.690) (NUDT1 = -inf..7.742) (EGFR = -inf..10.809) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=225.0, Posterior Probability=0.9956, P=0.0064, TP=7, FP=0, Pos=54, Neg=54
+
+2. ((COL10A1 = -inf..7.690) (NUDT1 = -inf..7.742) (EGFR = 10.809..inf) (LOC646736 = -inf..4.186)) ==> (@Class = Control)
+	Posterior Odds=161.0, Posterior Probability=0.9938, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+3. ((COL10A1 = 7.690..inf) (NUDT1 = -inf..7.742) (EGFR = -inf..10.809) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+4. ((COL10A1 = -inf..7.690) (NUDT1 = 7.742..inf) (EGFR = -inf..10.809) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+5. ((COL10A1 = -inf..7.690) (NUDT1 = 7.742..inf) (EGFR = 10.809..inf) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+6. ((COL10A1 = 7.690..inf) (NUDT1 = 7.742..inf) (EGFR = 10.809..inf) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((COL10A1 = 7.690..inf) (NUDT1 = -inf..7.742) (EGFR = 10.809..inf) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((COL10A1 = 7.690..inf) (NUDT1 = 7.742..inf) (EGFR = -inf..10.809) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((COL10A1 = -inf..7.690) (NUDT1 = -inf..7.742) (EGFR = 10.809..inf) (LOC646736 = 4.186..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+10. ((COL10A1 = 7.690..inf) (NUDT1 = -inf..7.742) (EGFR = 10.809..inf) (LOC646736 = -inf..4.186)) ==> (@Class = Case)
+	Posterior Odds=513.0, Posterior Probability=0.9981, P=0.0, TP=16, FP=0, Pos=54, Neg=54
+
+11. ((COL10A1 = 7.690..inf) (NUDT1 = 7.742..inf) (EGFR = 10.809..inf) (LOC646736 = -inf..4.186)) ==> (@Class = Case)
+	Posterior Odds=449.0, Posterior Probability=0.9978, P=0.0, TP=14, FP=0, Pos=54, Neg=54
+
+12. ((COL10A1 = 7.690..inf) (NUDT1 = 7.742..inf) (EGFR = -inf..10.809) (LOC646736 = -inf..4.186)) ==> (@Class = Case)
+	Posterior Odds=385.0, Posterior Probability=0.9974, P=0.0001, TP=12, FP=0, Pos=54, Neg=54
+
+13. ((COL10A1 = 7.690..inf) (NUDT1 = -inf..7.742) (EGFR = -inf..10.809) (LOC646736 = -inf..4.186)) ==> (@Class = Case)
+	Posterior Odds=289.0, Posterior Probability=0.9966, P=0.0014, TP=9, FP=0, Pos=54, Neg=54
+
+14. ((COL10A1 = -inf..7.690) (NUDT1 = 7.742..inf) (EGFR = -inf..10.809) (LOC646736 = -inf..4.186)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+15. ((COL10A1 = -inf..7.690) (NUDT1 = 7.742..inf) (EGFR = 10.809..inf) (LOC646736 = -inf..4.186)) ==> (@Class = Case)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (4):
+LOC646736, COL10A1, EGFR, NUDT1
+
+=== Generating bayesian model ===
+(None)->SGCG, (None)->COL10A1, (None)->POLD4, (None)->EGFR, (None)->MASP1, (SGCG,COL10A1,POLD4,EGFR,MASP1)->@Class, 
+
+=== Rules from fold 5 ===
+0. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (EGFR = -inf..10.809) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=2689.0, Posterior Probability=0.9996, P=0.0, TP=42, FP=0, Pos=54, Neg=54
+
+1. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (EGFR = 10.809..inf) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=385.0, Posterior Probability=0.9974, P=0.0135, TP=6, FP=0, Pos=54, Neg=54
+
+2. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (EGFR = 10.809..inf) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=129.0, Posterior Probability=0.9923, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+3. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (EGFR = -inf..10.809) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=129.0, Posterior Probability=0.9923, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+4. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (EGFR = -inf..10.809) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+5. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (EGFR = -inf..10.809) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+6. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (EGFR = 10.809..inf) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (EGFR = -inf..10.809) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (EGFR = 10.809..inf) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (EGFR = -inf..10.809) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+10. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (EGFR = 10.809..inf) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+11. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (EGFR = 10.809..inf) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+12. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (EGFR = 10.809..inf) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+13. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (EGFR = -inf..10.809) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+14. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (EGFR = -inf..10.809) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+15. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (EGFR = 10.809..inf) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+16. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (EGFR = -inf..10.809) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+17. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (EGFR = 10.809..inf) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+18. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (EGFR = -inf..10.809) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+19. ((SGCG = 6.501..inf) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (EGFR = 10.809..inf) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+20. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (EGFR = 10.809..inf) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+21. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (EGFR = 10.809..inf) (MASP1 = -inf..6.839)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+22. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (EGFR = -inf..10.809) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+23. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (EGFR = -inf..10.809) (MASP1 = 6.839..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+24. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (EGFR = 10.809..inf) (MASP1 = -inf..6.839)) ==> (@Class = Case)
+	Posterior Odds=1665.0, Posterior Probability=0.9994, P=0.0, TP=26, FP=0, Pos=54, Neg=54
+
+25. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = -inf..9.431) (EGFR = -inf..10.809) (MASP1 = -inf..6.839)) ==> (@Class = Case)
+	Posterior Odds=1153.0, Posterior Probability=0.9991, P=0.0, TP=18, FP=0, Pos=54, Neg=54
+
+26. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (EGFR = 10.809..inf) (MASP1 = -inf..6.839)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+27. ((SGCG = -inf..6.501) (COL10A1 = 7.703..inf) (POLD4 = 9.431..inf) (EGFR = -inf..10.809) (MASP1 = -inf..6.839)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+28. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = -inf..9.431) (EGFR = 10.809..inf) (MASP1 = 6.839..inf)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+29. ((SGCG = 6.501..inf) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (EGFR = -inf..10.809) (MASP1 = 6.839..inf)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+30. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (EGFR = 10.809..inf) (MASP1 = -inf..6.839)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+31. ((SGCG = -inf..6.501) (COL10A1 = -inf..7.703) (POLD4 = 9.431..inf) (EGFR = -inf..10.809) (MASP1 = -inf..6.839)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (5):
+MASP1, COL10A1, EGFR, SGCG, POLD4
+
+=== Generating bayesian model ===
+(None)->COL10A1, (None)->CASKIN2, (None)->AKR1C3, (None)->EGFR, (COL10A1,CASKIN2,AKR1C3,EGFR)->@Class, 
+
+=== Rules from fold 6 ===
+0. ((COL10A1 = -inf..7.690) (CASKIN2 = 9.090..inf) (AKR1C3 = 8.953..10.839) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=1489.0, Posterior Probability=0.9993, P=0.0, TP=31, FP=0, Pos=54, Neg=54
+
+1. ((COL10A1 = -inf..7.690) (CASKIN2 = -inf..9.090) (AKR1C3 = 8.953..10.839) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=385.0, Posterior Probability=0.9974, P=0.003, TP=8, FP=0, Pos=54, Neg=54
+
+2. ((COL10A1 = -inf..7.690) (CASKIN2 = 9.090..inf) (AKR1C3 = 10.839..inf) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=241.0, Posterior Probability=0.9959, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+3. ((COL10A1 = -inf..7.690) (CASKIN2 = 9.090..inf) (AKR1C3 = 8.953..10.839) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=241.0, Posterior Probability=0.9959, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+4. ((COL10A1 = 7.690..inf) (CASKIN2 = 9.090..inf) (AKR1C3 = 8.953..10.839) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+5. ((COL10A1 = -inf..7.690) (CASKIN2 = -inf..9.090) (AKR1C3 = -inf..8.953) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+6. ((COL10A1 = -inf..7.690) (CASKIN2 = -inf..9.090) (AKR1C3 = -inf..8.953) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+7. ((COL10A1 = -inf..7.690) (CASKIN2 = 9.090..inf) (AKR1C3 = -inf..8.953) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+8. ((COL10A1 = -inf..7.690) (CASKIN2 = -inf..9.090) (AKR1C3 = 8.953..10.839) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+9. ((COL10A1 = 7.690..inf) (CASKIN2 = 9.090..inf) (AKR1C3 = -inf..8.953) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+10. ((COL10A1 = 7.690..inf) (CASKIN2 = 9.090..inf) (AKR1C3 = 10.839..inf) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+11. ((COL10A1 = 7.690..inf) (CASKIN2 = 9.090..inf) (AKR1C3 = 10.839..inf) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+12. ((COL10A1 = -inf..7.690) (CASKIN2 = 9.090..inf) (AKR1C3 = -inf..8.953) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+13. ((COL10A1 = 7.690..inf) (CASKIN2 = 9.090..inf) (AKR1C3 = -inf..8.953) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+14. ((COL10A1 = 7.690..inf) (CASKIN2 = 9.090..inf) (AKR1C3 = 8.953..10.839) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+15. ((COL10A1 = -inf..7.690) (CASKIN2 = 9.090..inf) (AKR1C3 = 10.839..inf) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+16. ((COL10A1 = 7.690..inf) (CASKIN2 = -inf..9.090) (AKR1C3 = 8.953..10.839) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=529.0, Posterior Probability=0.9981, P=0.0003, TP=11, FP=0, Pos=54, Neg=54
+
+17. ((COL10A1 = 7.690..inf) (CASKIN2 = -inf..9.090) (AKR1C3 = 8.953..10.839) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=481.0, Posterior Probability=0.9979, P=0.0006, TP=10, FP=0, Pos=54, Neg=54
+
+18. ((COL10A1 = 7.690..inf) (CASKIN2 = -inf..9.090) (AKR1C3 = -inf..8.953) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=433.0, Posterior Probability=0.9977, P=0.0014, TP=9, FP=0, Pos=54, Neg=54
+
+19. ((COL10A1 = 7.690..inf) (CASKIN2 = -inf..9.090) (AKR1C3 = 10.839..inf) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=433.0, Posterior Probability=0.9977, P=0.0014, TP=9, FP=0, Pos=54, Neg=54
+
+20. ((COL10A1 = 7.690..inf) (CASKIN2 = -inf..9.090) (AKR1C3 = 10.839..inf) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=337.0, Posterior Probability=0.997, P=0.0064, TP=7, FP=0, Pos=54, Neg=54
+
+21. ((COL10A1 = 7.690..inf) (CASKIN2 = -inf..9.090) (AKR1C3 = -inf..8.953) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=241.0, Posterior Probability=0.9959, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+22. ((COL10A1 = -inf..7.690) (CASKIN2 = -inf..9.090) (AKR1C3 = 10.839..inf) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+23. ((COL10A1 = -inf..7.690) (CASKIN2 = -inf..9.090) (AKR1C3 = 10.839..inf) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (4):
+AKR1C3, COL10A1, EGFR, CASKIN2
+
+=== Generating bayesian model ===
+(None)->AGER, (None)->SLC50A1, (None)->JPT2, (None)->EGFR, (AGER,SLC50A1,JPT2,EGFR)->@Class, 
+
+=== Rules from fold 7 ===
+0. ((AGER = 11.057..inf) (SLC50A1 = -inf..8.688) (JPT2 = -inf..9.873) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=1441.0, Posterior Probability=0.9993, P=0.0, TP=45, FP=0, Pos=54, Neg=54
+
+1. ((AGER = 11.057..inf) (SLC50A1 = -inf..8.688) (JPT2 = -inf..9.873) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=161.0, Posterior Probability=0.9938, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+2. ((AGER = -inf..11.057) (SLC50A1 = -inf..8.688) (JPT2 = -inf..9.873) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+3. ((AGER = -inf..11.057) (SLC50A1 = -inf..8.688) (JPT2 = -inf..9.873) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+4. ((AGER = 11.057..inf) (SLC50A1 = 8.688..inf) (JPT2 = 9.873..inf) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+5. ((AGER = 11.057..inf) (SLC50A1 = -inf..8.688) (JPT2 = 9.873..inf) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+6. ((AGER = 11.057..inf) (SLC50A1 = 8.688..inf) (JPT2 = 9.873..inf) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((AGER = 11.057..inf) (SLC50A1 = 8.688..inf) (JPT2 = -inf..9.873) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((AGER = 11.057..inf) (SLC50A1 = -inf..8.688) (JPT2 = 9.873..inf) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((AGER = -inf..11.057) (SLC50A1 = 8.688..inf) (JPT2 = 9.873..inf) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=705.0, Posterior Probability=0.9986, P=0.0, TP=22, FP=0, Pos=54, Neg=54
+
+10. ((AGER = -inf..11.057) (SLC50A1 = 8.688..inf) (JPT2 = 9.873..inf) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=577.0, Posterior Probability=0.9983, P=0.0, TP=18, FP=0, Pos=54, Neg=54
+
+11. ((AGER = -inf..11.057) (SLC50A1 = -inf..8.688) (JPT2 = 9.873..inf) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=161.0, Posterior Probability=0.9938, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+12. ((AGER = -inf..11.057) (SLC50A1 = 8.688..inf) (JPT2 = -inf..9.873) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+13. ((AGER = -inf..11.057) (SLC50A1 = -inf..8.688) (JPT2 = 9.873..inf) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+14. ((AGER = -inf..11.057) (SLC50A1 = 8.688..inf) (JPT2 = -inf..9.873) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=65.0, Posterior Probability=0.9848, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+15. ((AGER = 11.057..inf) (SLC50A1 = 8.688..inf) (JPT2 = -inf..9.873) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=33.0, Posterior Probability=0.9706, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (4):
+EGFR, AGER, SLC50A1, JPT2
+
+=== Generating bayesian model ===
+(None)->COL10A1, (None)->RTKN2, (None)->EGFR, (COL10A1,RTKN2,EGFR)->@Class, 
+
+=== Rules from fold 8 ===
+0. ((COL10A1 = -inf..7.128) (RTKN2 = 5.646..inf) (EGFR = -inf..10.788)) ==> (@Class = Control)
+	Posterior Odds=985.0, Posterior Probability=0.999, P=0.0, TP=41, FP=0, Pos=54, Neg=54
+
+1. ((COL10A1 = -inf..7.128) (RTKN2 = 5.646..inf) (EGFR = 10.788..inf)) ==> (@Class = Control)
+	Posterior Odds=121.0, Posterior Probability=0.9918, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+2. ((COL10A1 = -inf..7.128) (RTKN2 = -inf..5.646) (EGFR = -inf..10.788)) ==> (@Class = Control)
+	Posterior Odds=73.0, Posterior Probability=0.9865, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+3. ((COL10A1 = -inf..7.128) (RTKN2 = -inf..5.646) (EGFR = 10.788..inf)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+4. ((COL10A1 = 7.128..7.690) (RTKN2 = 5.646..inf) (EGFR = 10.788..inf)) ==> (@Class = Control)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+5. ((COL10A1 = 7.128..7.690) (RTKN2 = 5.646..inf) (EGFR = -inf..10.788)) ==> (@Class = Control)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+6. ((COL10A1 = 7.690..inf) (RTKN2 = 5.646..inf) (EGFR = -inf..10.788)) ==> (@Class = Control)
+	Posterior Odds=25.0, Posterior Probability=0.9615, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+7. ((COL10A1 = 7.690..inf) (RTKN2 = 5.646..inf) (EGFR = 10.788..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((COL10A1 = 7.128..7.690) (RTKN2 = -inf..5.646) (EGFR = -inf..10.788)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((COL10A1 = 7.690..inf) (RTKN2 = -inf..5.646) (EGFR = 10.788..inf)) ==> (@Class = Case)
+	Posterior Odds=697.0, Posterior Probability=0.9986, P=0.0, TP=29, FP=0, Pos=54, Neg=54
+
+10. ((COL10A1 = 7.690..inf) (RTKN2 = -inf..5.646) (EGFR = -inf..10.788)) ==> (@Class = Case)
+	Posterior Odds=553.0, Posterior Probability=0.9982, P=0.0, TP=23, FP=0, Pos=54, Neg=54
+
+11. ((COL10A1 = 7.128..7.690) (RTKN2 = -inf..5.646) (EGFR = 10.788..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+Attributes used (3):
+RTKN2, COL10A1, EGFR
+
+=== Generating bayesian model ===
+(None)->COL10A1, (None)->PKNOX2, (None)->FBN1, (None)->EGFR, (COL10A1,PKNOX2,FBN1,EGFR)->@Class, 
+
+=== Rules from fold 9 ===
+0. ((COL10A1 = -inf..7.690) (PKNOX2 = 7.991..inf) (FBN1 = -inf..10.764) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=1537.0, Posterior Probability=0.9993, P=0.0, TP=32, FP=0, Pos=54, Neg=54
+
+1. ((COL10A1 = -inf..7.690) (PKNOX2 = 6.862..7.991) (FBN1 = -inf..10.764) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=577.0, Posterior Probability=0.9983, P=0.0001, TP=12, FP=0, Pos=54, Neg=54
+
+2. ((COL10A1 = -inf..7.690) (PKNOX2 = 7.991..inf) (FBN1 = -inf..10.764) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=241.0, Posterior Probability=0.9959, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+3. ((COL10A1 = -inf..7.690) (PKNOX2 = 6.862..7.991) (FBN1 = -inf..10.764) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=145.0, Posterior Probability=0.9932, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+4. ((COL10A1 = 7.690..inf) (PKNOX2 = 7.991..inf) (FBN1 = -inf..10.764) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+5. ((COL10A1 = -inf..7.690) (PKNOX2 = 7.991..inf) (FBN1 = 10.764..inf) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+6. ((COL10A1 = 7.690..inf) (PKNOX2 = 7.991..inf) (FBN1 = 10.764..inf) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+7. ((COL10A1 = 7.690..inf) (PKNOX2 = 7.991..inf) (FBN1 = -inf..10.764) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((COL10A1 = -inf..7.690) (PKNOX2 = -inf..6.862) (FBN1 = 10.764..inf) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((COL10A1 = -inf..7.690) (PKNOX2 = -inf..6.862) (FBN1 = 10.764..inf) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+10. ((COL10A1 = 7.690..inf) (PKNOX2 = 7.991..inf) (FBN1 = 10.764..inf) (EGFR = -inf..10.809)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+11. ((COL10A1 = -inf..7.690) (PKNOX2 = 7.991..inf) (FBN1 = 10.764..inf) (EGFR = 10.809..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+12. ((COL10A1 = 7.690..inf) (PKNOX2 = -inf..6.862) (FBN1 = -inf..10.764) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=625.0, Posterior Probability=0.9984, P=0.0001, TP=13, FP=0, Pos=54, Neg=54
+
+13. ((COL10A1 = 7.690..inf) (PKNOX2 = 6.862..7.991) (FBN1 = -inf..10.764) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=481.0, Posterior Probability=0.9979, P=0.0006, TP=10, FP=0, Pos=54, Neg=54
+
+14. ((COL10A1 = 7.690..inf) (PKNOX2 = 6.862..7.991) (FBN1 = -inf..10.764) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=385.0, Posterior Probability=0.9974, P=0.003, TP=8, FP=0, Pos=54, Neg=54
+
+15. ((COL10A1 = 7.690..inf) (PKNOX2 = -inf..6.862) (FBN1 = -inf..10.764) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+16. ((COL10A1 = 7.690..inf) (PKNOX2 = 6.862..7.991) (FBN1 = 10.764..inf) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+17. ((COL10A1 = 7.690..inf) (PKNOX2 = 6.862..7.991) (FBN1 = 10.764..inf) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+18. ((COL10A1 = 7.690..inf) (PKNOX2 = -inf..6.862) (FBN1 = 10.764..inf) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+19. ((COL10A1 = 7.690..inf) (PKNOX2 = -inf..6.862) (FBN1 = 10.764..inf) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=145.0, Posterior Probability=0.9932, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+20. ((COL10A1 = -inf..7.690) (PKNOX2 = 6.862..7.991) (FBN1 = 10.764..inf) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+21. ((COL10A1 = -inf..7.690) (PKNOX2 = 6.862..7.991) (FBN1 = 10.764..inf) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+22. ((COL10A1 = -inf..7.690) (PKNOX2 = -inf..6.862) (FBN1 = -inf..10.764) (EGFR = -inf..10.809)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+23. ((COL10A1 = -inf..7.690) (PKNOX2 = -inf..6.862) (FBN1 = -inf..10.764) (EGFR = 10.809..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (4):
+COL10A1, EGFR, FBN1, PKNOX2
+
+=== Generating bayesian model ===
+(None)->EFNA4, (None)->KLRG2, (None)->EGFR, (None)->LIMS2, (EFNA4,KLRG2,EGFR,LIMS2)->@Class, 
+
+=== Rules from fold 10 ===
+0. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (LIMS2 = 8.356..inf)) ==> (@Class = Control)
+	Posterior Odds=1729.0, Posterior Probability=0.9994, P=0.0, TP=36, FP=0, Pos=54, Neg=54
+
+1. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (LIMS2 = 8.356..inf)) ==> (@Class = Control)
+	Posterior Odds=289.0, Posterior Probability=0.9966, P=0.0135, TP=6, FP=0, Pos=54, Neg=54
+
+2. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (LIMS2 = 8.356..inf)) ==> (@Class = Control)
+	Posterior Odds=241.0, Posterior Probability=0.9959, P=0.0284, TP=5, FP=0, Pos=54, Neg=54
+
+3. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (LIMS2 = -inf..8.356)) ==> (@Class = Control)
+	Posterior Odds=145.0, Posterior Probability=0.9932, P=0.1215, TP=3, FP=0, Pos=54, Neg=54
+
+4. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (LIMS2 = 8.356..inf)) ==> (@Class = Control)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.2477, TP=2, FP=0, Pos=54, Neg=54
+
+5. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (LIMS2 = 8.356..inf)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+6. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (LIMS2 = 8.356..inf)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+7. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (LIMS2 = -inf..8.356)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+8. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (LIMS2 = -inf..8.356)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+9. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (LIMS2 = -inf..8.356)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+10. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (LIMS2 = -inf..8.356)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+11. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (LIMS2 = -inf..8.356)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+12. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (LIMS2 = 8.356..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+13. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (LIMS2 = -inf..8.356)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+14. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (LIMS2 = 8.356..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+15. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (LIMS2 = -inf..8.356)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=54, Neg=54
+
+16. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (LIMS2 = -inf..8.356)) ==> (@Class = Case)
+	Posterior Odds=1009.0, Posterior Probability=0.999, P=0.0, TP=21, FP=0, Pos=54, Neg=54
+
+17. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (LIMS2 = -inf..8.356)) ==> (@Class = Case)
+	Posterior Odds=721.0, Posterior Probability=0.9986, P=0.0, TP=15, FP=0, Pos=54, Neg=54
+
+18. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (LIMS2 = -inf..8.356)) ==> (@Class = Case)
+	Posterior Odds=337.0, Posterior Probability=0.997, P=0.0064, TP=7, FP=0, Pos=54, Neg=54
+
+19. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (LIMS2 = 8.356..inf)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+20. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (LIMS2 = -inf..8.356)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.059, TP=4, FP=0, Pos=54, Neg=54
+
+21. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (LIMS2 = 8.356..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+22. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (LIMS2 = 8.356..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+23. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (LIMS2 = 8.356..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=54, Neg=54
+
+Attributes used (4):
+EGFR, KLRG2, EFNA4, LIMS2
+
+

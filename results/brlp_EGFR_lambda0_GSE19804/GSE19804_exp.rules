@@ -1,0 +1,62 @@
+Generating Bayesian model: 
+(None)->EFNA4, (None)->KLRG2, (None)->PLPP4, (EFNA4,KLRG2,PLPP4)->@Class, 
+
+Rules from whole training data:
+
+0. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (PLPP4 = 5.073..5.573)) ==> (@Class = Control)
+	Posterior Odds=973.0, Posterior Probability=0.999, P=0.0, TP=27, FP=0, Pos=60, Neg=60
+
+1. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (PLPP4 = -inf..5.073)) ==> (@Class = Control)
+	Posterior Odds=577.0, Posterior Probability=0.9983, P=0.0, TP=16, FP=0, Pos=60, Neg=60
+
+2. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (PLPP4 = 5.073..5.573)) ==> (@Class = Control)
+	Posterior Odds=289.0, Posterior Probability=0.9966, P=0.003, TP=8, FP=0, Pos=60, Neg=60
+
+3. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (PLPP4 = 5.073..5.573)) ==> (@Class = Control)
+	Posterior Odds=109.0, Posterior Probability=0.9909, P=0.1218, TP=3, FP=0, Pos=60, Neg=60
+
+4. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (PLPP4 = -inf..5.073)) ==> (@Class = Control)
+	Posterior Odds=73.0, Posterior Probability=0.9865, P=0.2479, TP=2, FP=0, Pos=60, Neg=60
+
+5. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (PLPP4 = -inf..5.073)) ==> (@Class = Control)
+	Posterior Odds=73.0, Posterior Probability=0.9865, P=0.2479, TP=2, FP=0, Pos=60, Neg=60
+
+6. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (PLPP4 = -inf..5.073)) ==> (@Class = Control)
+	Posterior Odds=73.0, Posterior Probability=0.9865, P=0.2479, TP=2, FP=0, Pos=60, Neg=60
+
+7. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (PLPP4 = -inf..5.073)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+8. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (PLPP4 = 5.573..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+9. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (PLPP4 = 5.573..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+10. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (PLPP4 = -inf..5.073)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+11. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (PLPP4 = 5.573..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+12. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (PLPP4 = 5.573..inf)) ==> (@Class = Case)
+	Posterior Odds=1009.0, Posterior Probability=0.999, P=0.0, TP=28, FP=0, Pos=60, Neg=60
+
+13. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (PLPP4 = 5.073..5.573)) ==> (@Class = Case)
+	Posterior Odds=469.0, Posterior Probability=0.9979, P=0.0001, TP=13, FP=0, Pos=60, Neg=60
+
+14. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (PLPP4 = 5.073..5.573)) ==> (@Class = Case)
+	Posterior Odds=361.0, Posterior Probability=0.9972, P=0.0006, TP=10, FP=0, Pos=60, Neg=60
+
+15. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (PLPP4 = 5.573..inf)) ==> (@Class = Case)
+	Posterior Odds=145.0, Posterior Probability=0.9932, P=0.0594, TP=4, FP=0, Pos=60, Neg=60
+
+16. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (PLPP4 = 5.573..inf)) ==> (@Class = Case)
+	Posterior Odds=109.0, Posterior Probability=0.9909, P=0.1218, TP=3, FP=0, Pos=60, Neg=60
+
+17. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (PLPP4 = 5.073..5.573)) ==> (@Class = Case)
+	Posterior Odds=73.0, Posterior Probability=0.9865, P=0.2479, TP=2, FP=0, Pos=60, Neg=60
+
+Attributes used (3):
+PLPP4, KLRG2, EFNA4
+

@@ -1,0 +1,80 @@
+Generating Bayesian model: 
+(None)->EFNA4, (None)->KLRG2, (None)->EGFR, (None)->C2CD6, (EFNA4,KLRG2,EGFR,C2CD6)->@Class, 
+
+Rules from whole training data:
+
+0. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (C2CD6 = -inf..3.899)) ==> (@Class = Control)
+	Posterior Odds=1825.0, Posterior Probability=0.9995, P=0.0, TP=38, FP=0, Pos=60, Neg=60
+
+1. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (C2CD6 = -inf..3.899)) ==> (@Class = Control)
+	Posterior Odds=433.0, Posterior Probability=0.9977, P=0.0014, TP=9, FP=0, Pos=60, Neg=60
+
+2. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (C2CD6 = -inf..3.899)) ==> (@Class = Control)
+	Posterior Odds=241.0, Posterior Probability=0.9959, P=0.0287, TP=5, FP=0, Pos=60, Neg=60
+
+3. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (C2CD6 = -inf..3.899)) ==> (@Class = Control)
+	Posterior Odds=241.0, Posterior Probability=0.9959, P=0.0287, TP=5, FP=0, Pos=60, Neg=60
+
+4. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (C2CD6 = 3.899..inf)) ==> (@Class = Control)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.2479, TP=2, FP=0, Pos=60, Neg=60
+
+5. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (C2CD6 = -inf..3.899)) ==> (@Class = Control)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=60, Neg=60
+
+6. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (C2CD6 = -inf..3.899)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+7. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (C2CD6 = 3.899..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+8. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (C2CD6 = -inf..3.899)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+9. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (C2CD6 = 3.899..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+10. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (C2CD6 = 3.899..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+11. ((EFNA4 = 6.944..7.478) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (C2CD6 = 3.899..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+12. ((EFNA4 = -inf..6.944) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (C2CD6 = 3.899..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+13. ((EFNA4 = -inf..6.944) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (C2CD6 = 3.899..inf)) ==> (@Class = Control)
+	Posterior Odds=1.0, Posterior Probability=0.5, P=1.0, TP=0, FP=0, Pos=60, Neg=60
+
+14. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (C2CD6 = -inf..3.899)) ==> (@Class = Case)
+	Posterior Odds=721.0, Posterior Probability=0.9986, P=0.0, TP=15, FP=0, Pos=60, Neg=60
+
+15. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (C2CD6 = -inf..3.899)) ==> (@Class = Case)
+	Posterior Odds=673.0, Posterior Probability=0.9985, P=0.0, TP=14, FP=0, Pos=60, Neg=60
+
+16. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (EGFR = 10.809..inf) (C2CD6 = -inf..3.899)) ==> (@Class = Case)
+	Posterior Odds=385.0, Posterior Probability=0.9974, P=0.003, TP=8, FP=0, Pos=60, Neg=60
+
+17. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (C2CD6 = 3.899..inf)) ==> (@Class = Case)
+	Posterior Odds=337.0, Posterior Probability=0.997, P=0.0065, TP=7, FP=0, Pos=60, Neg=60
+
+18. ((EFNA4 = 7.478..inf) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (C2CD6 = 3.899..inf)) ==> (@Class = Case)
+	Posterior Odds=241.0, Posterior Probability=0.9959, P=0.0287, TP=5, FP=0, Pos=60, Neg=60
+
+19. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (C2CD6 = -inf..3.899)) ==> (@Class = Case)
+	Posterior Odds=193.0, Posterior Probability=0.9948, P=0.0594, TP=4, FP=0, Pos=60, Neg=60
+
+20. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (C2CD6 = -inf..3.899)) ==> (@Class = Case)
+	Posterior Odds=145.0, Posterior Probability=0.9932, P=0.1218, TP=3, FP=0, Pos=60, Neg=60
+
+21. ((EFNA4 = 7.478..inf) (KLRG2 = 6.411..inf) (EGFR = -inf..10.809) (C2CD6 = 3.899..inf)) ==> (@Class = Case)
+	Posterior Odds=97.0, Posterior Probability=0.9898, P=0.2479, TP=2, FP=0, Pos=60, Neg=60
+
+22. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (EGFR = -inf..10.809) (C2CD6 = 3.899..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=60, Neg=60
+
+23. ((EFNA4 = 6.944..7.478) (KLRG2 = -inf..6.411) (EGFR = 10.809..inf) (C2CD6 = 3.899..inf)) ==> (@Class = Case)
+	Posterior Odds=49.0, Posterior Probability=0.98, P=0.5, TP=1, FP=0, Pos=60, Neg=60
+
+Attributes used (4):
+EGFR, C2CD6, KLRG2, EFNA4
+

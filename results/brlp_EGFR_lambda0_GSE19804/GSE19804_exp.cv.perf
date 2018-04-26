@@ -1,0 +1,31 @@
+=== Learner parameters ===
+
+Training data: GSE19804_exp.txt
+Incorporating structure priors from file: egfr_lambda_0.txt
+Discretization method: EBD using lambda of 0.5 (2009)
+Learning method: Constrained Bayesian Global Network Rule Learner - Greedy search
+CF function: Posterior odds
+Min conjuncts: 1
+Max conjuncts: 8
+Inference type: Weighted voting (0)
+Beam width: 1000
+Validation method: 10-fold cross-validation with seed 2 
+
+=== Stratified cross-validation performance ===
+
+Accuracy ignoring abst.:                86.667 %
+Accuracy including abst.:               86.667 %
+Abstentions:                            0 (0 %)
+Relative classifier information:        44.221 +/- 9.57
+
+Class        Sensitivity(%)           Specificity(%)           Balanced Accuracy(%)     AUROC                   
+------------ ------------------------ ------------------------ ------------------------ ------------------------ 
+Control      91.667 +/- 2.778         81.667 +/- 5.241         86.667 +/- 3.093         0.943 +/- 0.013         
+Case         81.667 +/- 5.241         91.667 +/- 2.778         86.667 +/- 3.093         0.943 +/- 0.013         
+
+Confusion matrix:
+	c1	c2	Abstentions
+	55	 5	 0	| c1  =  Control
+	11	49	 0	| c2  =  Case
+
+
